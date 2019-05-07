@@ -1,0 +1,30 @@
+{
+  "name": "api-marketplace-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node --project tsconfig.json -r dotenv/config sms/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@collaborizm/apimarket": "^0.0.13",
+    "@types/node": "^12.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "husky": "^2.2.0",
+    "prettier": "1.17.0",
+    "pretty-quick": "^1.10.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
